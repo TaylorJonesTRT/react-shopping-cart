@@ -24,7 +24,6 @@ const Home = () => (
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, y: 15 }}
         transition={{ duration: 3 }}
-        exit={{ opacity: 0 }}
       >
         Buy the Fanciest Fridge of Them All
       </motion.h1>
@@ -36,7 +35,6 @@ const Home = () => (
         variants={imgVariants}
         initial="hidden"
         animate="visible"
-        exit={{ opacity: 0 }}
       />
       <motion.h2
         key="purchase-link"
@@ -44,7 +42,6 @@ const Home = () => (
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 3, duration: 5 }}
-        exit={{ opacity: 0 }}
       >
         <a href="/shop">Purchase it Now</a>
       </motion.h2>
